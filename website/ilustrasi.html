@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilustrasi Kisah Inspiratif</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #e0f2f7; /* Biru muda yang menenangkan */
+            margin: 0;
+            overflow: hidden; /* Mencegah scroll yang tidak diinginkan */
+            color: #333;
+        }
+
+        .scene {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            height: 500px; /* Tinggi scene */
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Elemen Ilustrasi Muslimah */
+        .muslimah-illustration {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(100%); /* Mulai dari bawah, tersembunyi */
+            width: 250px; /* Ukuran ilustrasi */
+            height: 350px; /* Tinggi ilustrasi */
+            background-color: #aed6f1; /* Warna dasar untuk ilustrasi */
+            border-radius: 10px 10px 0 0;
+            animation: slideInUp 1.5s ease-out forwards; /* Animasi muncul dari bawah */
+            animation-delay: 0.5s;
+            opacity: 0; /* Mulai tersembunyi */
+            background-image: url('https://via.placeholder.com/250x350/aed6f1/ffffff?text=Ilustrasi+Muslimah'); /* Placeholder gambar */
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Detail Hijab (Contoh Sederhana) */
+        .muslimah-illustration::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 180px;
+            height: 80px;
+            background-color: #7fb3d5; /* Warna hijab */
+            border-radius: 50% / 100px 100px 0 0;
+        }
+
+        /* Efek Cahaya */
+        .light-effect {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0); /* Mulai dari kecil dan tersembunyi */
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(255,255,100,0.8) 0%, rgba(255,255,100,0) 70%);
+            border-radius: 50%;
+            animation: pulseLight 2s ease-out forwards;
+            animation-delay: 2s;
+            opacity: 0;
+        }
+
+        /* Teks Motivasi */
+        .motivation-text {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInText 1.5s ease-out forwards;
+            animation-delay: 3s;
+        }
+
+        .motivation-text span {
+            display: block;
+            font-size: 0.7em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Keyframe Animations */
+        @keyframes slideInUp {
+            from {
+                transform: translateX(-50%) translateY(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulseLight {
+            from {
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .scene {
+                height: 400px;
+                margin: 20px;
+                padding: 15px;
+            }
+            .muslimah-illustration {
+                width: 200px;
+                height: 280px;
+            }
+            .muslimah-illustration::before {
+                width: 150px;
+                height: 70px;
+                top: -15px;
+            }
+            .motivation-text {
+                font-size: 1.2em;
+            }
+            .light-effect {
+                width: 120px;
+                height: 120px;
+            }
+
+            <div style="position: fixed; bottom: 0px; left: 10px;width:100px;height:160px;"><a href="http://permathic.blogspot.com/2012/05/kumpulan-animasi-bergerak-yang-lucu-dan.html" target="_blank"><img border="0" src="http://content.sweetim.com/sim/cpie/emoticons/00020322.gif" title="Click to get more." /></a><small><center><a href="http://permathic.blogspot.com/2012/05/kumpulan-animasi-bergerak-yang-lucu-dan.html" target="_blank">Widget Animasi</a></center></small></div>
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scene">
+        <div class="muslimah-illustration"></div>
+        <div class="light-effect"></div>
+        <div class="motivation-text">
+            "Cahaya yang Mendorongku untuk Terus Berkembang"
+            <span>jika maut lebih dulu menjemputku, selamat kamu adalah yang pertama dan terakhir.</span>
+        </div>
+    </div>
+    <div class="footer" style="margin-top: 20px; font-size: 0.8em; color: #777;">
+        *mungkin bertemu dengannya adalah bagian terindah dihidupku.
+    </div>
+
+</body>
+</html>
